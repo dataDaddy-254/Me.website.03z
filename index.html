@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musungu Shadrack Snr. - Portfolio</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles and font import */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc; /* Light subtle blue-gray background */
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-900 antialiased"> <!-- Updated: text-gray-800 changed to text-gray-900 (deep navy look) -->
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-blue-600 tracking-tight">Musungu Shadrack Snr. | Portfolio</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#projects" class="text-gray-900 hover:text-blue-600 transition duration-150">Projects</a>
+                <a href="#opinion" class="text-gray-900 hover:text-blue-600 transition duration-150">Opinion</a> <!-- LINK TEXT IS ALREADY 'Opinion' -->
+                <a href="#resume" class="text-gray-900 hover:text-blue-600 transition duration-150">Resume</a>
+                <a href="#contact" class="text-gray-900 hover:text-blue-600 transition duration-150">Contact</a>
+            </nav>
+            <button id="cta-button-nav" class="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">Connect</button>
+
+            <!-- Mobile Menu Button (Icon using SVG for simplicity) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-900 hover:text-blue-600 focus:outline-none p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <a href="#projects" class="block py-3 px-4 text-gray-900 hover:bg-gray-50">Projects</a>
+            <a href="#opinion" class="block py-3 px-4 text-gray-900 hover:bg-gray-50">Opinion</a> <!-- LINK TEXT IS ALREADY 'Opinion' -->
+            <a href="#resume" class="block py-3 px-4 text-gray-900 hover:bg-gray-50">Resume</a>
+            <a href="#contact" class="block py-3 px-4 text-gray-900 hover:bg-gray-50">Contact</a>
+            <button class="w-full bg-blue-600 text-white px-4 py-3 font-semibold hover:bg-blue-700 transition duration-300">Connect</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Introduction) -->
+        <section class="text-center py-20 md:py-32 bg-gradient-to-br from-white to-blue-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- START: Profile Picture Updated with Musungu Shadrack Snr.'s photo URL. -->
+                <img src="https://i.ibb.co/8Dycp5br/me.jpg" 
+                     alt="Musungu Shadrack Snr. Profile Picture" 
+                     class="w-40 h-40 rounded-full mx-auto mb-8 object-cover border-4 border-white shadow-xl transform hover:scale-105 transition duration-300">
+                <!-- END: Profile Picture -->
+
+                <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    Financial Analyst, Equity Researcher & <span class="text-blue-600">Problem Solver</span>
+                </h2>
+                <!-- INTRO PARAGRAPH UPDATED BELOW -->
+                <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">
+                    Hola! I take great passion in playing a role in helping firms and organizations to build different financial models and data visualization projects to aid in making informed decision making and drive growth across the financial sector.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#resume" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition duration-300 shadow-xl transform hover:scale-105">
+                        View Resume
+                    </a>
+                    <a href="#projects" class="inline-block bg-white text-blue-600 border border-blue-600 px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-50 hover:text-blue-700 transition duration-300 shadow-lg">
+                        See My Work
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-bold text-center mb-16">Featured Projects & Case Studies</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    
+                    <!-- Project 1: Financial Modeling -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group">
+                        <div class="text-blue-600 mb-4">
+                            <!-- Icon: Calculator/Spreadsheet (using SVG) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6a2 2 0 10-4 0v6m8-6v6a2 2 0 004 0v-6a2 2 0 10-4 0m-4-2h.01M12 11h.01M16 11h.01M7 7h.01M12 7h.01M16 7h.01"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3 group-hover:text-blue-700 transition">3-Statement Financial Model</h4>
+                        <p class="text-gray-700 mb-4">Developed a robust, integrated financial model (Income Statement, Balance Sheet, Cash Flow) for a high-growth tech startup to forecast valuation and funding needs over five years.</p>
+                        <a href="#" class="text-blue-500 hover:text-blue-700 font-medium text-sm">View Model Summary →</a> | <a href="#" class="text-gray-700 hover:text-gray-900 font-medium text-sm">Download Report</a>
+                    </div>
+
+                    <!-- Project 2: Equity Research -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group">
+                        <div class="text-blue-600 mb-4">
+                            <!-- Icon: Document/Report (using SVG) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m-6-8h6M5 21h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3 group-hover:text-blue-700 transition">Sector-Specific Equity Research</h4>
+                        <p class="text-gray-700 mb-4">Comprehensive **Buy-Side research report** on the Renewable Energy sector. Used DCF analysis and comparable company multiples to recommend a "Buy" rating on a major utility stock.</p>
+                        <a href="#" class="text-blue-500 hover:text-blue-700 font-medium text-sm">Read Full Analysis →</a> | <a href="#" class="text-gray-700 hover:text-gray-900 font-medium text-sm">View Valuation Data</a>
+                    </div>
+
+                    <!-- Project 3: Data Visualization -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group">
+                        <div class="text-blue-600 mb-4">
+                            <!-- Icon: Chart/Dashboard (using SVG) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-8v8m-4-8v8M4 16h16"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3 group-hover:text-blue-700 transition">Interactive Risk & Returns Dashboard</h4>
+                        <p class="text-gray-700 mb-4">Built a Python/Plotly dashboard to visualize portfolio volatility, tracking performance metrics and Sharpe ratios to communicate risk exposure to stakeholders visually.</p>
+                        <a href="#" class="text-blue-500 hover:text-blue-700 font-medium text-sm">View Dashboard Demo →</a> | <a href="#" class="text-gray-700 hover:text-gray-900 font-medium text-sm">Project Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opinion Section -->
+        <section id="opinion" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- UPDATED SECTION TITLE -->
+                <h3 class="text-4xl font-bold text-center mb-6">My Financial Opinion</h3>
+                <!-- UPDATED SECTION DESCRIPTION -->
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-12">
+                    Sharing my analysis on current market trends, equity valuations, and macroeconomic drivers across the financial sector.
+                </p>
+
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <!-- START: Example Article Placeholder -->
+                    <div class="text-left bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-600">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-2">Macro Outlook on Emerging Markets</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Published: November 1, 2025</p>
+                        <p class="text-gray-700 mb-4">Analyzing the impact of US interest rates on emerging market debt and equity flows for Q4 2025.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read Article →</a>
+                    </div>
+                    <!-- END: Example Article Placeholder -->
+                    
+                    <a href="#contact" class="inline-block mt-4 bg-white text-blue-600 border border-blue-600 px-6 py-3 rounded-xl font-bold hover:bg-blue-50 transition duration-300 shadow-md">
+                        Contact Me About My Analysis
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-20 bg-white"> <!-- Changed background to bg-white -->
+            <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Need a deeper dive?</h3>
+                <p class="text-xl text-gray-700 mb-8">Download my full resume for a detailed look at my experience, skills, and professional journey.</p>
+                <!-- IMPORTANT: Replace the href value below with the direct URL to your hosted PDF file. -->
+                <a href="[PASTE YOUR RESUME PDF LINK HERE]" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-xl text-xl font-bold hover:bg-blue-700 transition duration-300 shadow-2xl transform hover:scale-105">
+                    Download Full Resume (PDF)
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-4">&copy; 2025 Musungu Shadrack Snr.. All rights reserved.</p>
+            <div class="space-x-4 text-sm">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-150">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-150">Terms of Service</a>
+                <a href="mailto:musungushadrack10@gmail.com" class="text-gray-400 hover:text-white transition duration-150">Email Me</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle and Custom Modal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Function to toggle the mobile menu visibility
+            const toggleMenu = () => {
+                mobileMenu.classList.toggle('hidden');
+            };
+
+            // Event listener for the button click
+            mobileMenuButton.addEventListener('click', toggleMenu);
+
+            // Close menu when a link is clicked (for better UX on mobile)
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            // Handle CTA click (Connect button in nav)
+            const ctaButtonNav = document.getElementById('cta-button-nav');
+            if (ctaButtonNav) {
+                ctaButtonNav.addEventListener('click', () => {
+                    alertModal("Thanks for your interest! Please use the 'Email Me' link in the footer to connect.", 'Let\'s Connect');
+                });
+            }
+
+            // Custom non-alert modal system (since alert() is disabled)
+            window.alertModal = function(message, title = 'Notification') {
+                let modal = document.getElementById('custom-alert-modal');
+                if (!modal) {
+                    modal = document.createElement('div');
+                    modal.id = 'custom-alert-modal';
+                    modal.className = 'fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50 hidden';
+                    modal.innerHTML = `
+                        <div class="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6 transform transition-all duration-300">
+                            <h5 class="text-xl font-bold mb-4 text-gray-800" id="modal-title"></h5>
+                            <p class="text-gray-600 mb-6" id="modal-message"></p>
+                            <button id="modal-close-button" class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">OK</button>
+                        </div>
+                    `;
+                    document.body.appendChild(modal);
+
+                    document.getElementById('modal-close-button').addEventListener('click', () => {
+                        modal.classList.add('hidden');
+                    });
+                }
+                document.getElementById('modal-title').textContent = title;
+                document.getElementById('modal-message').textContent = message;
+                modal.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
